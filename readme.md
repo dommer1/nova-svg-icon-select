@@ -7,7 +7,7 @@ todo
 ### Install
 
 ```bash
-composer require dommer/nova-svg-icon-select
+composer require dommer1/nova-svg-icon-select
 ```
 
 ### Configuration
