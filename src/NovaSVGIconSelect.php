@@ -48,7 +48,7 @@ class NovaSVGIconSelect extends Field
 
         return array_merge(parent::jsonSerialize(), [
             'options' => $options,
-            'svgPath' => $this->svgPath ?: config('nova-svg-icon.svgPath'),
+            'svgPath' => $this->svgPath ?: asset(config('nova-svg-icon.svgPath')),
             'color' => $this->color ?: config('nova-svg-icon.color'),
         ]);
     }

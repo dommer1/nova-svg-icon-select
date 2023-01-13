@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'svgPath' => asset('images/icons.svg'),
+    'svgPath' => 'images/icons.svg',
 
     'color' => 'text-gray-800',
 
