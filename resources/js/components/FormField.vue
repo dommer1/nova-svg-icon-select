@@ -17,7 +17,7 @@
           <ShowOption :option="option" :field="field" />
         </template>
         <template v-slot:selected-option="option">
-          <ShowOption :option="option" :field="field" />
+          <ShowOption :option="option || value" :field="field" />
         </template>
       </v-select>
     </template>
@@ -53,7 +53,7 @@ export default {
      * Set the initial, internal value for the field.
      */
     setInitialValue() {
-      this.value = this.field.value || ''
+      this.value = { value: this.field.value } || ''
       this.options = this.field.options || []
       this.svgPath = this.field.svgPath
       this.color = this.field.color

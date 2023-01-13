@@ -1,7 +1,7 @@
 <template>
   <PanelItem :index="index" :field="field">
     <template v-slot:value v-if="field.value">
-      <ShowOption :field="field" />
+      <ShowOption :option="{ value: field.value }" :field="field" />
     </template>
   </PanelItem>
 </template>
